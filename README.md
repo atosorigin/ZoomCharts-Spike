@@ -26,8 +26,6 @@ The PieChart is simple to use, clicking on a slice will focus in on that slice a
 
 In the example, a button has been added to add a goal for a selected player and season and then the PieChart is refreshed with the updated data.
 
-![image](https://cloud.githubusercontent.com/assets/6545019/21321235/f0acbc5a-c60b-11e6-8bea-7c694c772ded.png)
-
 #### FacetChart
 The FacetChart is created using a `new FacetChart` constructor, this is an interactive bar chart. It contains the same nodes as a PieChart and is backed by the same data model.
 
@@ -36,8 +34,6 @@ In this constructor the `series` node is also added which in this example is use
 The FacetChart works in a similar way to PieChart where clicking on a bar will focus in on that slice and show bars for the child values. There is a 'Back' and 'Zoom Out' button to return. 
 
 Again, this example is backed by the button to add a goal for a selected player and season and refresh the FacetChart.
-
-![image](https://cloud.githubusercontent.com/assets/6545019/21321268/0e8c5c94-c60c-11e6-9d43-456173447b3d.png)
 
 #### NetChart
 The NetChart is created using a `new NetChart` constructor which is a chart used to link objects together. Again, this has `container`, `area` and `data` nodes. In the `data` object there is a node called `preloaded` which contains `nodes` and `links`. The `nodes` are the list of nodes on the chart and each have an `id`. The `links` are used to define links between nodes, they have an `id` and then a `from` and `to` value which are set using the `id`'s of the nodes.
@@ -48,14 +44,10 @@ Once more, the NetChart is easy to use, clicking a node will expand it and a nod
 
 A button has been added to add extra links between players to the data object and then the chart is updated by calling the in-built `reloadChart()` method.
 
-![image](https://cloud.githubusercontent.com/assets/6545019/21321294/1e2b6e4c-c60c-11e6-8903-25ca614e544e.png)
-
 #### TimeChart
 The TimeChart is created using a `new TimeChart` constructor which is a bar chart used to represent values over time (similar to the FacetChart, but with the x-axis predefined).  Again, this has `container`, `area` and `data` nodes. In the `data` object there is a node called `preloaded` which contains `values`, each of these have a date/time linked to a value.
 
 In this example the constructor also contains `interaction` and `toolbar` nodes. The `interaction` node is used to disable zooming on the bars (this zooming can be used to view values by month, week, day. hour etc.). The `toolbar` node is used to override the default toolbar and just add functionality to export to *.png* and *.xlsx*.
-
-![image](https://cloud.githubusercontent.com/assets/6545019/21321314/2bbf37f0-c60c-11e6-817d-62e43d1005eb.png)
 
 ### Support
 There are many examples and a detailed documentation for all ZoomCharts which can be found [here](https://zoomcharts.com/developers/en/introduction.html). There is also a [forum](https://forum.zoomcharts.com/) used to raise issues and ask questions about using ZoomCharts.
